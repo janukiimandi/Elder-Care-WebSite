@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elder Care App - Sign Up</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #2E7D32;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1B5E20;
+        }
+
+        /* Container for the sign-up form */
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: auto; /* Center horizontally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 150px;
+            margin-bottom: auto; /* Adjusted to account for header and navbar */
+        }
+
+        h2 {
+            text-align: center;
+            color: #2E7D32;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .footer-links a:hover {
+            background-color: #1B5E20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elder Care App</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html">About Us</a>
+    <a href="index.html">Contact Us</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="support.html">Helpers</a>
+    <a href="health.html">Packages</a>
+</nav>
+
+<div class="container">
+    <h2>Sign Up</h2>
+    <form action="/signup" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+        </div>
+        <input type="submit" value="Sign Up">
+    </form>
+    <div class="login-link">
+        <p>Already have an account? <a href="login.html">Log in here</a>.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Elder Care App. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="index.html">Home</a> | 
+        <a href="index.html">About Us</a> | 
+        <a href="index.html">Contact Us</a>
+    </div>
+</footer>
+
+</body>
+</html>

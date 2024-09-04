@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elder Care App - Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #2E7D32;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #1B5E20;
+        }
+
+        /* Container for the login form */
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 150px; /* Space to account for header and navbar */
+        }
+
+        .container h2 {
+            color: #2E7D32;
+            margin-bottom: 20px;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container input[type="email"],
+        .container input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #2E7D32;
+        }
+
+        .container .toggle-link {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #2E7D32;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .footer-links a:hover {
+            background-color: #1B5E20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elder Care App</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html">About Us</a>
+    <a href="#contact">Contact Us</a>
+    <a href="login.html">Login </a>
+    <a href="signup.html">Sign Up </a>
+    <a href="support.html">Helpes</a>
+    <a href="health.html">Packages</a>
+</nav>
+
+<div class="container">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <input type="submit" value="Login">
+    </form>
+    <p class="toggle-link" onclick="window.location.href='signup.html'">Don't have an account? Sign Up</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Elder Care App. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#home">Home</a> | 
+        <a href="#about">About Us</a> | 
+        <a href="#contact">Contact Us</a>
+    </div>
+</footer>
+
+</body>
+</html>

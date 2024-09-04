@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ATJ Elder Care App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #2E7D32;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #1B5E20;
+        }
+        .carousel {
+            width: 90%;
+            margin: 20px auto;
+            overflow: hidden;
+            max-width: 800px;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .about, .contact {
+            padding: 30px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            line-height: 1.6;
+        }
+        .about h2, .contact h2 {
+            color: #2E7D32;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .footer-links a:hover {
+            background-color: #1B5E20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> Elder Care App</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+    <a href="login.html">Login </a>
+    <a href="signup.html">Sign Up </a>
+    <a href="support.html">Helpes</a>
+    <a href="health.html">Packages</a>
+</nav>
+
+<div class="carousel" id="carousel">
+    <div class="slides">
+        <img src="h.jpg" alt="Slide 1">
+        <img src="h1.jfif" alt="Slide 2">
+        <img src="h2.htm" alt="Slide 3">
+    </div>
+</div>
+
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>At Elder Care App, our mission is to empower seniors to live independently and with dignity. Our platform provides a user-friendly interface to manage daily tasks, medications, and appointments seamlessly. We believe that technology can bridge the gap between caregivers and seniors, offering peace of mind to families and a better quality of life for elders.</p>
+    <p>Founded on the principles of compassion and innovation, we strive to create a safe and reliable environment where seniors can thrive. Our team of experts is dedicated to enhancing the well-being of our users, ensuring that they remain connected and cared for.</p>
+    <p>Join us in making elder care simpler and more effective. With our app, you’re never alone in caring for your loved ones.</p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, we're here to help. Please reach out to us through any of the following methods:</p>
+    <p>Email: <a href="mailto:support@eldercareapp.com">support@eldercareapp.com</a></p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: 123 Elder Care Lane, Suite 100, Your City, ST 12345</p>
+    <p>Business Hours: Monday - Friday: 9:00 AM - 6:00 PM</p>
+    <p>Our customer support is available 24/7 to assist you with any inquiries.</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Elder Care App. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="#home">Home</a> | 
+        <a href="#about">About Us</a> | 
+        <a href="#contact">Contact Us</a>
+        <a href="support.html">Helpes</a>
+    </div>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slides img');
+    
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            slide.style.display = (index === slideIndex) ? 'block' : 'none';
+        });
+        slideIndex = (slideIndex + 1) % slides.length;
+        setTimeout(showSlides, 3000);
+    }
+
+    showSlides();
+</script>
+
+</body>
+</html>

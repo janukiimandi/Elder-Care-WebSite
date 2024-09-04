@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Packages - Elder Care App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #2E7D32;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #1B5E20;
+        }
+        .container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .package-card {
+            background-color: white;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .package-card h4 {
+            font-size: 26px;
+            color: #2E7D32;
+            margin-top: 0;
+        }
+        .package-card ul {
+            font-size: 18px;
+            line-height: 1.6;
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .package-card ul li {
+            padding: 5px 0;
+        }
+        .price {
+            font-size: 24px;
+            color: #4CAF50;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #388e3c;
+        }
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        footer a:hover {
+            background-color: #1B5E20;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Service Packages</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html">About Us</a>
+    <a href="index.html">Contact Us</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="support.html">Helpers</a>
+    <a href="health.html">Packages</a>
+</nav>
+
+<div class="container">
+    <!-- Basic Care Package -->
+    <div class="package-card">
+        <h4>Basic Care Package</h4>
+        <ul>
+            <li>Weekly Personal Care Assistance</li>
+            <li>Monthly Medical Check-ups</li>
+            <li>Grocery Delivery Twice a Month</li>
+        </ul>
+        <p class="price">$200/month</p>
+        <a href="#customize" class="button">Customize & Subscribe</a>
+    </div>
+
+    <!-- Standard Care Package -->
+    <div class="package-card">
+        <h4>Standard Care Package</h4>
+        <ul>
+            <li>Daily Personal Care Assistance</li>
+            <li>Weekly Medical Check-ups</li>
+            <li>Grocery Delivery Weekly</li>
+            <li>Bi-weekly Companionship Visits</li>
+        </ul>
+        <p class="price">$400/month</p>
+        <a href="#customize" class="button">Customize & Subscribe</a>
+    </div>
+
+    <!-- Premium Care Package -->
+    <div class="package-card">
+        <h4>Premium Care Package</h4>
+        <ul>
+            <li>Daily Personal Care Assistance</li>
+            <li>Daily Medical Assistance</li>
+            <li>Unlimited Grocery Delivery</li>
+            <li>Weekly Companionship Visits</li>
+        </ul>
+        <p class="price">$600/month</p>
+        <a href="#customize" class="button">Customize & Subscribe</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Elder Care App. All rights reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>

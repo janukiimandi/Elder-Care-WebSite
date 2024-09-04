@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tips Monitoring</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .health-tips, .habit-tracker, .reminders {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            background-color: #e9ecef;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .tracker-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .tracker-item button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .tracker-item button:hover {
+            background-color: #218838;
+        }
+        .reminder-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #ffc107;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .reminder-item button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .reminder-item button:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Tips Monitoring</h1>
+</header>
+
+<div class="container">
+
+    <!-- Health Tips Section -->
+    <section class="health-tips">
+        <h2 class="section-title">Daily Health Tips</h2>
+        <ul>
+            <li>Stay hydrated: Drink at least 8 glasses of water a day.</li>
+            <li>Exercise regularly: Aim for at least 30 minutes of physical activity daily.</li>
+            <li>Eat a balanced diet: Include fruits, vegetables, and whole grains in your meals.</li>
+        </ul>
+    </section>
+
+    <!-- Habit Tracker Section -->
+    <section class="habit-tracker">
+        <h2 class="section-title">Track Your Health Habits</h2>
+        <div class="tracker-item">
+            <span>Water Intake (Glasses)</span>
+            <button onclick="increment('water')">Track</button>
+        </div>
+        <div class="tracker-item">
+            <span>Exercise (Minutes)</span>
+            <button onclick="increment('exercise')">Track</button>
+        </div>
+    </section>
+
+    <!-- Reminders Section -->
+    <section class="reminders">
+        <h2 class="section-title">Reminders</h2>
+        <div class="reminder-item">
+            <span>Take your morning medication</span>
+            <button onclick="markDone(this)">Done</button>
+        </div>
+        <div class="reminder-item">
+            <span>Evening walk at 6 PM</span>
+            <button onclick="markDone(this)">Done</button>
+        </div>
+    </section>
+
+</div>
+
+<script>
+    function increment(habit) {
+        alert(`Tracked ${habit}! Keep it up!`);
+    }
+
+    function markDone(button) {
+        button.parentElement.style.backgroundColor = '#28a745';
+        button.textContent = 'Completed';
+        button.style.backgroundColor = '#6c757d';
+        button.disabled = true;
+    }
+</script>
+
+</body>
+</html>
