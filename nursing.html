@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nursing Services</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            background-color: #2E7D32;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #1B5E20;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .nurse-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .nurse-details {
+            flex: 1;
+        }
+        .nurse-details p {
+            margin: 5px 0;
+        }
+        .book-btn {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .book-btn:hover {
+            background-color: #388E3C;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nursing Services</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="nursing.html">Nursing</a>
+    <a href="housekeeping.html">Housekeeping</a>
+    <a href="transportation.html">Transportation</a>
+</nav>
+
+<div class="container">
+    <h2>Available Nurses</h2>
+
+    <div class="nurse-card">
+        <div class="nurse-details">
+            <p><strong>Name:</strong> Nurse Jane Doe</p>
+            <p><strong>Age:</strong> 35</p>
+            <p><strong>Location:</strong> New York</p>
+        </div>
+        <button class="book-btn">Book</button>
+    </div>
+
+    <div class="nurse-card">
+        <div class="nurse-details">
+            <p><strong>Name:</strong> Nurse John Smith</p>
+            <p><strong>Age:</strong> 40</p>
+            <p><strong>Location:</strong> Los Angeles</p>
+        </div>
+        <button class="book-btn">Book</button>
+    </div>
+
+    <div class="nurse-card">
+        <div class="nurse-details">
+            <p><strong>Name:</strong> Nurse Emily Clark</p>
+            <p><strong>Age:</strong> 30</p>
+            <p><strong>Location:</strong> Chicago</p>
+        </div>
+        <button class="book-btn">Book</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Elder Care App. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
